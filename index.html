@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="card even-columns bg-soft-red">
+          <div class="text-color-white">
+            <p>My balance</p>
+            <h2>$921.48</h2>
+          </div>
+          <div class="icon-wrapper">
+            <i class="circle-icon"></i>
+          </div>
+        </div>
+        <div class="card stack bg-pale-orange">
+          <h2>Spending - Last 7 days</h2>
+          <div class="column-chart">
+            <ul class="column-list">
+              <li class="column-item">
+                <div
+                  class="column bg-soft-red"
+                  style="--column-percent: 10%"
+                ></div>
+                <span class="weekday">mon</span>
+              </li>
+              <li class="column-item">
+                <div
+                  class="column bg-soft-red"
+                  style="--column-percent: 52%"
+                  data-current
+                ></div>
+                <span class="weekday">tue</span>
+              </li>
+              <li class="column-item">
+                <div
+                  class="column bg-soft-red"
+                  style="--column-percent: 80%"
+                ></div>
+                <span class="weekday">wed</span>
+              </li>
+              <li class="column-item">
+                <div
+                  class="column bg-soft-red"
+                  style="--column-percent: 23%"
+                ></div>
+                <span class="weekday">thu</span>
+              </li>
+              <li class="column-item">
+                <div
+                  class="column bg-soft-red"
+                  style="--column-percent: 43%"
+                ></div>
+                <span class="weekday">fri</span>
+              </li>
+              <li class="column-item">
+                <div
+                  class="column bg-soft-red"
+                  style="--column-percent: 56%"
+                ></div>
+                <span class="weekday">sat</span>
+              </li>
+              <li class="column-item">
+                <div
+                  class="column bg-soft-red"
+                  style="--column-percent: 52%"
+                ></div>
+                <span class="weekday">sun</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div>
+              <p class="label fs-3">Total this month</p>
+              <h2>$478.33</h2>
+            </div>
+            <div>
+              <p class="fs-3">+2.4%</p>
+              <span class="label fs-3"> from last month</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

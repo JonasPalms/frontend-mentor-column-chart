@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 600px;
   width: 500px;
   margin-inline: auto;
   display: grid;
@@ -75,7 +75,7 @@ body {
 
 .column {
   min-height: var(--column-percent);
-  border-radius: 0.5em;
+  border-radius: 0.4em;
   margin-bottom: 1em;
   cursor: pointer;
 }
@@ -92,9 +92,10 @@ body {
   text-align: center;
   flex-direction: column;
   display: flex;
+  color: var(--medium-brown);
   justify-content: end;
   width: 100%;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   padding-inline: 6px;
 }
 
@@ -124,4 +125,7 @@ body {
 
 .fs-3 {
   font-size: 0.9rem;
+}
+.fs-6 {
+  font-size: 2rem;
 }
